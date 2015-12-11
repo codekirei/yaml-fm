@@ -22,7 +22,8 @@ const fmOb = (strs, content) => Object.assign(yaml.load(strs[1]), {content})
   @param {String} delim - delimiter for frontmatter
   @returns {Buffer} buffer of non-frontmatter content
  */
-const fmContent = (strs, delim) => new Buffer(strs.slice(2).join(delim), 'utf8')
+const fmContent = (strs, delim) =>
+  new Buffer(strs.slice(2).join(delim).trim(), 'utf8')
 
 /**
   Curried function to apply strs to fmOb and fmContent.

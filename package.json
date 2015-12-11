@@ -4,7 +4,8 @@
   "description": "parse yaml frontmatter",
   "main": "index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "cover": "nyc ava"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,9 @@
   "homepage": "https://github.com/codekirei/yaml-fm#readme",
   "dependencies": {
     "js-yaml": "^3.4.6"
+  },
+  "devDependencies": {
+    "ava": "^0.7.0",
+    "nyc": "^5.0.0"
   }
 }
