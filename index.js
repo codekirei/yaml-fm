@@ -26,7 +26,7 @@ const fmContent = (strs, delim) =>
   new Buffer(strs.slice(2).join(delim).trim(), 'utf8')
 
 /**
-  Curried function to apply strs to fmOb and fmContent.
+  Curried function to pass strs to fmOb and fmContent.
   @param {String[]} strs - array of strings separated by delimiter
   @param {String} delim - delimiter for frontmatter
   @returns {Object} flat object with frontmatter and content
@@ -34,7 +34,7 @@ const fmContent = (strs, delim) =>
 const fm = (strs, delim) => fmOb(strs, fmContent(strs, delim))
 
 /**
-  Curried function to apply delim to anonymous function that calls fm.
+  Curried function to pass delim to anonymous function that calls fm.
   @param {String} delim - delimiter for frontmatter
   @returns {Function} anonymous function that parses string with frontmatter
  */

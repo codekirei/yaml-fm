@@ -1,0 +1,3 @@
+- [ ] hook up travis and coveralls
+- [ ] write readme
+- [ ] publish on npm
