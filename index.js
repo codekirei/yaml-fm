@@ -18,6 +18,8 @@ const fmOb = (strs, content) => Object.assign(yaml.load(strs[1]), {content})
 
 /**
   Build buffer of all content after frontmatter.
+  @param {String[]} strs - array of strings separated by delimiter
+  @param {String} delim - delimiter for frontmatter
   @returns {Buffer} buffer of non-frontmatter content
  */
 const fmContent = (strs, delim) => new Buffer(strs.slice(2).join(delim), 'utf8')
