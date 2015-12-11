@@ -1,0 +1,27 @@
+{
+  "name": "yaml-fm",
+  "version": "0.1.0",
+  "description": "parse yaml frontmatter",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codekirei/yaml-fm.git"
+  },
+  "keywords": [
+    "yaml",
+    "frontmatter",
+    "blog"
+  ],
+  "author": "Jacob Blakely (codekirei)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codekirei/yaml-fm/issues"
+  },
+  "homepage": "https://github.com/codekirei/yaml-fm#readme",
+  "dependencies": {
+    "js-yaml": "^3.4.6"
+  }
+}
