@@ -12,7 +12,7 @@
 
 ## About
 
-`yaml-fm` converts a [String][string] with [YAML][yaml] [frontmatter][frontmatter] to an [Object][object].
+`yaml-fm` is a [Node.js][node] module that converts a [String][string] with [YAML][yaml] [frontmatter][frontmatter] to an [Object][object].
 It uses [currying][currying] to be [`.map()`][map] friendly and converts non-YAML content to a [trimmed][trim] [Buffer][buffer].
 Use it to build your own personal [static-site generator][ssg]!
 
@@ -153,6 +153,7 @@ globby('content/*.md')
 [4]: https://coveralls.io/github/codekirei/node-multispinner?branch=master
 [5]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [6]: https://github.com/codekirei/yaml-fm/blob/master/license
+[node]: https://nodejs.org/
 [string]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 [yaml]: http://yaml.org/
 [frontmatter]: http://jekyllrb.com/docs/frontmatter/
