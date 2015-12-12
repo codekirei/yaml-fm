@@ -14,6 +14,8 @@ baz: qux
 ---
 One fish two fish
 
+---
+
 Red fish blue fish
 `
 
@@ -28,7 +30,9 @@ test('parse frontmatter and content', t => {
   const expected = {
     foo: 'bar',
     baz: 'qux',
-    content: new Buffer(`One fish two fish\n\nRed fish blue fish`, 'utf8')
+    content: new Buffer(
+      `One fish two fish\n\n---\n\nRed fish blue fish`, 'utf8'
+    )
   }
 
   t.same(fmOut, expected)
