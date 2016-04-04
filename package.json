@@ -1,6 +1,6 @@
 {
   "name": "yaml-fm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "parse yaml frontmatter",
   "main": "index.js",
   "scripts": {
