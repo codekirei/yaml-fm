@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "test-ci": "nyc ava -reporter=lcovonly",
+    "test-ci": "nyc ava --reporter=lcovonly",
     "cover": "nyc ava",
     "md": "pm2 start pen"
   },
